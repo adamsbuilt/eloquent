@@ -10,7 +10,7 @@ Write a loop that makes seven calls to console.log to output the following trian
 #######
 It may be useful to know that you can find the length of a string by writing .length after it.
 
-var abc = "abc";
+const abc = "abc";
 console.log(abc.length);
 // → 3
 
@@ -26,9 +26,9 @@ You can go from 1 to 2 by adding 1 (+= 1). You can go from "#" to "##" by adding
 Thus, your solution can closely follow the number-printing program.
 */
 
-for (var hash = "#"; hash <= "#######"; hash +="#")
+for (let hash = "#"; hash <= "#######"; hash +="#")
   console.log(hash);
 
 
-for (var line = "#"; line.length < 8; line += "#")
+for (let line = "#"; line.length < 8; line += "#")
   console.log(line);

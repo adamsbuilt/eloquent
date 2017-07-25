@@ -9,8 +9,8 @@ When you have that working, modify your program to print "FizzBuzz", for numbers
 So if you solved it, you’re now allowed to feel good about yourself.)
 */
 
-for (var i = 1; i <= 100; i++) {
-  var print = "";
+for (let i = 1; i <= 100; i++) {
+  let print = "";
   if (i % 3 == 0)
     print += "Fizz";
   if (i % 5 == 0)
