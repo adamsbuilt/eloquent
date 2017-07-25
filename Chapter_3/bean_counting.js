@@ -14,13 +14,13 @@ Next, write a function called countChar that behaves like countBs, except it tak
 second argument that indicates the character that is to be counted (rather than counting
 only uppercase "B" characters). Rewrite countBs to make use of this new function. */
 
-// var countBs = function(str) {
+// const countBs = function(str) {
 //     return str.match(/B/g).length;
 // };
 
 
-var countChar = function(str, char) {
-    var matchExp = new RegExp(char, 'g');
+const countChar = function(str, char) {
+    const matchExp = new RegExp(char, 'g');
     return str.match(matchExp).length;
 };
 
@@ -28,5 +28,6 @@ var countChar = function(str, char) {
 //   return countChar(str, "B")
 // }
 console.log(countChar('gggggangster school', 'g'));
-
+// 6
 console.log(countChar('BEST BETS BETTER', 'B'));
+// 3

@@ -5,8 +5,9 @@ its smallest argument. We can do that ourselves now. Write a function min that
 takes two arguments and returns their minimum.
 */
 
-var min = function(x, y) {
+const min = (x, y) => {
     return (x <= y) ? x : y;
 };
 
 console.log(min(2,3828));
+// 2

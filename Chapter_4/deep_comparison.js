@@ -14,13 +14,13 @@ function deepEqual(a, b) {
       typeof b != "object" || b == null) // check if object
     return false;
 
-  var propsInA = 0; //set object property variable
-  var propsInB = 0;
+  let propsInA = 0; //set object property constiable
+  let propsInB = 0;
 
-  for (var prop in a) // property count
+  for (const prop in a) // property count
     propsInA += 1; // +1 for each property
 
-  for (var prop in b) {
+  for (const prop in b) {
     propsInB += 1;
     // check if there's an existing property in a.
     // for each property at same index call deepEqual to see if prop & values match
@@ -32,11 +32,11 @@ function deepEqual(a, b) {
   return propsInA === propsInB;
 }
 
-var obj = {here: {is: "an"}, object: 2};
-var one = 5;
-var two = 5;
-var three = "5";
-var four = "5";
+const obj = {here: {is: "an"}, object: 2};
+const one = 1;
+const two = 1;
+const three = "1";
+const four = "1";
 console.log(deepEqual(one,two));
 // true
 console.log(deepEqual(one,three));

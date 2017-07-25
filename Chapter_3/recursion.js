@@ -13,7 +13,7 @@ should accept a number parameter and return a Boolean.
 
 Test it on 50 and 75. See how it behaves on -1. Why? Can you think of a way to fix this?*/
 
-var isEven = function(num) {
+const isEven = (num) => {
     num = Math.abs(num); // removes negative / fixes RangeError
     if (num === 0)
         return true;
@@ -24,8 +24,9 @@ var isEven = function(num) {
 };
 
 
-console.log(isEven(50)); // true
-
-console.log(isEven(75)); // false
-
-console.log(isEven(-1)); // false
+console.log(isEven(50));
+// true
+console.log(isEven(75));
+// false
+console.log(isEven(-1));
+// false

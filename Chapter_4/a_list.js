@@ -62,15 +62,15 @@ function prepend(value, list) {
 }
 
 function arrayToList(arr) {
-  var list = null;
-  for (var i = arr.length - 1; i >= 0; i--) {
+  let list = null;
+  for (let i = arr.length - 1; i >= 0; i--) {
     list = prepend(arr[i], list)
   }
   return list;
 }
 
 function listToArray(list) {
-  var arr = [];
+  let arr = [];
   while(list !== null) {
     arr.push(list.value);
     list = list.rest;
